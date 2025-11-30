@@ -12,14 +12,6 @@ BioQuery‑AI‑Chatbot is a custom AI-powered web platform designed for biomedi
 - **Test Suite Included**: Basic tests (`test.py`, `test_main_function.py`) to verify core functionality.  
 
 
-## 📦 Repository Structure
-BioQuery‑AI‑Chatbot/
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── test.py
-├── test_main_function.py
-└── (other source files and modules)
 
 ## 🛠️ Getting Started
 
