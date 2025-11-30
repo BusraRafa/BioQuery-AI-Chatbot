@@ -1,21 +1,16 @@
 # BioQuery‑AI‑Chatbot 🤖
 
-BioQuery‑AI‑Chatbot is a Python‑based AI chatbot framework that leverages *multiple models* together to answer user queries intelligently. Rather than parsing PDFs, the system integrates several LLMs and models to produce responses — making it a flexible “multi‑model chatbot engine”.
+BioQuery‑AI‑Chatbot is a custom AI-powered web platform designed for biomedical research. It allows researchers to input biomedical queries (e.g., **target discovery**, **protein expression**) and receive comprehensive responses from **multiple AI engines**. These engines include ChatGPT, Claude, Gemini, Mistral, XAI, and DeepSeek, which work in parallel to provide diverse insights and responses. The system displays side-by-side answers from all engines and provides citations where available.
 
-## 🚀 Why BioQuery‑AI‑Chatbot
+## 🚀 Key Features
 
-- Combines strengths of different models to improve answer quality, robustness, and versatility.  
-- Provides a unified interface: you send a query, and the system runs multiple back‑end models and aggregates or selects the best response.  
-- Modular and extensible: you can plug in additional models or adjust the existing ones for your use case.  
-- Easy to set up and run locally (with support for environment variables for sensitive keys like API tokens).
-
-## Features
-
-- **Multi‑Model Integration**: Supports several LLMs (as configured in the code) — not just one fixed backend.  
-- **Unified Chat Interface**: Seamlessly interacts with models and returns responses.  
-- **Configurable via `.env`**: Keeps sensitive credentials (e.g. API keys) out of the code.  
-- **Simple Setup & Lightweight**: Pure Python dependencies, minimal overhead, ideal for experimentation.  
+- **Multi‑Model Integration**: The chatbot uses six different AI models (ChatGPT, Claude, Gemini, Mistral, XAI, and DeepSeek) to generate diverse responses for biomedical queries.
+- **Parallel Processing**: All models run simultaneously, and their answers are aggregated and displayed side by side.
+- **Comprehensive Responses**: Each AI engine brings its unique strengths to the table, providing a rich and multi-faceted view of biomedical questions.
+- **Citations and References**: When applicable, the system provides citations to sources for the answers or mentions that they were generated from the AI’s trained knowledge base.
+- **Modular and Extensible**: You can easily integrate additional models or tweak the existing configurations as required for your research.
 - **Test Suite Included**: Basic tests (`test.py`, `test_main_function.py`) to verify core functionality.  
+
 
 ## 📦 Repository Structure
 BioQuery‑AI‑Chatbot/
@@ -26,23 +21,20 @@ BioQuery‑AI‑Chatbot/
 ├── test_main_function.py
 └── (other source files and modules)
 
-
-- **`requirements.txt`** — Python dependencies required to run the chatbot.  
-- **Test files** — ensure that main functions run correctly and provide a base for future unit tests.  
-- **Source files** — where models are integrated, and chatbot logic implemented.  
-
 ## 🛠️ Getting Started
+
+Follow these instructions to get the project running on your local machine.
 
 ### Prerequisites
 
-- Python 3.8 or newer  
-- (Recommended) A virtual environment tool (`venv`, `virtualenv`, etc.)  
-- API key(s) or credentials for the model back‑ends (if applicable)  
+1. **Python 3.8+**: Ensure you have Python 3.8 or a newer version installed.
+2. **API Keys**: You need API keys for the various models integrated (e.g., OpenAI, Gemini, Claude, DeepSeek, XAI, and Mistral).
+3. **(Optional) Virtual Environment**: Use `venv` or any other virtual environment tool to manage dependencies.
 
 ### Installation & Setup
 
 ```bash
-# 1. Clone the repo
+# 1. Clone the repository
 git clone https://github.com/BusraRafa/BioQuery‑AI‑Chatbot.git
 cd BioQuery‑AI‑Chatbot
 
@@ -56,14 +48,14 @@ source venv/bin/activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Add your credentials 
-#    Create a .env file in the root directory:
-echo OPENAI_API_KEY=your_openai_key_here > .env
-#    (and any other required environment vars for other models)
-```
-```bash
-python app.py   # or whichever script is the main entry point
-
+# 4. Set up your .env file for API keys
+# Create a .env file in the root directory and add the following (replace with your actual keys):
+GEMINI_API_KEY=your_gemini_api_key 
+CLAUDE_API_KEY=your_claude_api_key 
+OPENAI_API_KEY=your_openai_api_key 
+DEEPSEEK_API_KEY=your_deepseek_api_key 
+XAI_API_KEY=your_xai_api_key 
+MISTRAL_API_KEY=your_mistral_api_key 
 ```
 
 
