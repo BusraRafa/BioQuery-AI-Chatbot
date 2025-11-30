@@ -1,5 +1,5 @@
 .env
 venv/
+__pycache__/
 new.py
 gpt5_test.py
-__pycache__/
