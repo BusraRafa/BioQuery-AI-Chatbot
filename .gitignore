@@ -1,0 +1,4 @@
+.env
+venv/
+new.py
+gpt5_test.py
