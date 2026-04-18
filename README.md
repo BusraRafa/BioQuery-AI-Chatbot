@@ -23,25 +23,31 @@ Follow these instructions to get the project running on your local machine.
 2. **API Keys**: You need API keys for the various models integrated (e.g., OpenAI, Gemini, Claude, DeepSeek, XAI, and Mistral).
 3. **(Optional) Virtual Environment**: Use `venv` or any other virtual environment tool to manage dependencies.
 
-### Installation & Setup
+## Installation & Setup
 
+#### 1. Clone the repository
 ```bash
-# 1. Clone the repository
 git clone https://github.com/BusraRafa/SmartBio-Assistant.git
 cd BioQuery‑AI‑Chatbot
-
-# 2. (Optional but recommended) Create a virtual environment
+```
+#### 2. (Optional but recommended) Create a virtual environment
+```
 python -m venv venv
+
 # On Windows
 venv\Scripts\activate
+
 # On macOS / Linux
 source venv/bin/activate
 
-# 3. Install dependencies
+```
+#### 3. Install dependencies
+```
 pip install -r requirements.txt
-
-# 4. Set up your .env file for API keys
-# Create a .env file in the root directory and add the following (replace with your actual keys):
+```
+#### 4. Set up your .env file for API keys
+##### Create a .env file in the root directory and add the following (replace with your actual keys):
+```
 GEMINI_API_KEY=your_gemini_api_key 
 CLAUDE_API_KEY=your_claude_api_key 
 OPENAI_API_KEY=your_openai_api_key 
