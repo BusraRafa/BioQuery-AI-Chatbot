@@ -19,9 +19,9 @@ Follow these instructions to get the project running on your local machine.
 
 ### Prerequisites
 
-1. **Python 3.8+**: Ensure you have Python 3.8 or a newer version installed.
-2. **API Keys**: You need API keys for the various models integrated (e.g., OpenAI, Gemini, Claude, DeepSeek, XAI, and Mistral).
-3. **(Optional) Virtual Environment**: Use `venv` or any other virtual environment tool to manage dependencies.
+- **Python 3.8+**: Ensure you have Python 3.8 or a newer version installed.
+- **API Keys**: You need API keys for the various models integrated (e.g., OpenAI, Gemini, Claude, DeepSeek, XAI, and Mistral).
+- **(Optional) Virtual Environment**: Use `venv` or any other virtual environment tool to manage dependencies.
 
 ## Installation & Setup
 
