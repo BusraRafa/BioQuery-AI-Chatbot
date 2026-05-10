@@ -2,9 +2,9 @@
 
 SmartBio-Assistant‑Chatbot is a custom AI-powered web platform designed for biomedical research. It allows researchers to input biomedical queries (e.g., **target discovery**, **protein expression**) and receive comprehensive responses from **multiple AI engines**. These engines include ChatGPT, Claude, Gemini, Mistral, XAI, and DeepSeek, which work in parallel to provide diverse insights and responses. The system displays side-by-side answers from all engines and provides citations where available.
 
-
+---
 ### 🌐 Live Website: [CurieCell](https://curiecell.com/)
-
+---
 ## 🚀 Key Features
 
 - **Multi‑Model Integration**: The chatbot uses six different AI models (ChatGPT, Claude, Gemini, Mistral, XAI, and DeepSeek) to generate diverse responses for biomedical queries.
